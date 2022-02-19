@@ -1,77 +1,90 @@
-body {
-    background-color: #eee;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login {
     display: flex;
+    height: 100vh;
+    width: 100vw;
     justify-content: center;
     align-items: center;
-    height: 100vh
+    background-color: #D3D3D3;
+
 }
 
-.card {
-    width: 400px;
-    padding: 20px;
-    border: none
+
+.lpage {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    width: 25vw;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 7px rgba(0, 0, 0, 0.527);
 }
 
-.account {
-    font-weight: 500;
-    font-size: 17px
-}
 
-.contact {
-    font-size: 13px
-}
-
-.form-control {
-    text-indent: 14px
-}
-
-.form-control:focus {
-    color: #495057;
-    background-color: #fff;
-    border-color: #4a148c;
-    outline: 0;
-    box-shadow: none
-}
-
-.inputbox {
+#email {
+    height: 5vh;
+    width: 20vw;
+    border-radius: 5px;
     margin-bottom: 10px;
-    position: relative
 }
 
-.inputbox i {
-    position: absolute;
-    left: 8px;
-    top: 12px;
-    color: #dadada
+#pass {
+
+    height: 5vh;
+    width: 20vw;
+    border-radius: 5px;
 }
 
-.form-check-label {
-    font-size: 13px
+#btn {
+    height: 5vh;
+    width: 8vw;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
 }
 
-.form-check-input {
-    width: 14px;
-    height: 15px;
-    margin-top: 5px
+#imgman {
+    height: fit-content;
+    width: fit-content;
+    height: 20vh;
+    width: 12vw;
+
 }
 
-.forgot {
-    font-size: 14px;
-    text-decoration: none;
-    color: #4A148C
-}
+@media screen and (max-width: 1024px) {
+    .lpage {
+        height: 55vh;
+        width: 70vw;
+    }
 
-.mail {
-    color: #4a148c;
-    text-decoration: none
-}
 
-.form-check {
-    cursor: pointer
-}
+    #email {
+        height: 5vh;
+        width: 50vw;
+    }
 
-.btn-primary {
-    color: #fff;
-    background-color: #4A148C;
-    border-color: #4A148C
+
+    #pass {
+        height: 5vh;
+        width: 50vw;
+    }
+
+
+    #btn {
+        height: 5vh;
+        width: 20vw;
+    }
+
+
+    #imgman {
+
+        height: 20vh;
+        width: 35vw;
+    }
 }

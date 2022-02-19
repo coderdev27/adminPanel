@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.full{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    background-color: #D3D3D3;
+}
+
+.dbox{
+    background-color: white;
+    box-shadow: 7px 4px rgba(0, 0, 0, 0.527);
+    width: 50vw;
+    
+}
+
+.form-group {
+    margin: 0 20px;
+}
+
+.custom-file{
+    margin: 20px 20px 0px 20px;
+    width: 47vw;
+}
+
+@media screen and (max-width : 1024px) {
+    .dbox{
+        width: 70vw;
+    }
+    .custom-file{
+        width: 60vw;
+    }
+}

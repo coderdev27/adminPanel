@@ -95,6 +95,11 @@ const storage = multer.diskStorage({
 
 
 app.post("/addproducts",upload.single('img'),async (req,res)=>{
+
+    try {
+        
+    
+
     const prodname = req.body.title;
     const cat = req.body.cat;
     const desc = req.body.description;
@@ -112,13 +117,19 @@ app.post("/addproducts",upload.single('img'),async (req,res)=>{
     image : imglink
     })
 
+
+   
     if(
    await addprod.save()){
        res.send("done")
-   }else{
+   }
+   else{
        res.send("failed")
    }
-   
+}
+catch (error) {
+        res.send(`${error}`)
+}
     
 })
 
